@@ -66,16 +66,16 @@
     />
 
     <!--Firebase Set-up-->
-    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
     <script>
       var config = {
-        apiKey: "AIzaSyB4LBqZX3PoRTejhsU97PIx206PgcFA_S0",
-        authDomain: "resume-contact-7f6f4.firebaseapp.com",
-        databaseURL: "https://resume-contact-7f6f4.firebaseio.com",
-        projectId: "resume-contact-7f6f4",
-        storageBucket: "resume-contact-7f6f4.appspot.com",
-        messagingSenderId: "772813503157"
+        apiKey: "AIzaSyDbZKG5QQtH38Vz41z7hHm_cRT01mGNob0",
+        authDomain: "https://resume-master.firebaseio.com/",
+        databaseURL: "https://resume-master.firebaseio.com/",
+        projectId: "resume-master",
+        storageBucket: "resume-master.appspot.com",
+        messagingSenderId: "310992060602"
       };
       firebase.initializeApp(config);
 
@@ -92,7 +92,7 @@
         };
         emailsref.push(emails);
       }
-    </script> -->
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -1975,11 +1975,86 @@
                       >
                     </p>
                   </div> -->
+                  </div>
+            </div>
+                  <div class="col-md-8 col-md-pull-4">
+                    <!--contact-form-->
+                    <form
+                      class="contact-form"
+                      id="contact-form"
+                      method="post"
+                      data-toggle="validator"
+                      novalidate="true"
+                    >
+                      <!--contact-form-result-->
+                      <div id="contact-form-result"></div>
+    
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="conatct-name-id"
+                              name="name"
+                              placeholder="Name"
+                              required=""
+                            />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="conatct-email-id"
+                              name="email"
+                              placeholder="Email"
+                              required=""
+                            />
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="conatct-subject-id"
+                          name="subject"
+                          placeholder="Subject"
+                          required=""
+                        />
+                        <div class="help-block with-errors"></div>
+                      </div>
+    
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          placeholder="Message"
+                          id="conatct-message-id"
+                          name="message"
+                          rows="6"
+                          required=""
+                        ></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+    
+                      <div class="form-group text-center">
+                        <button
+                          onclick="savedata()"
+                          class="btn-material disabled"
+                          style="pointer-events: all; cursor: pointer;"
+                        >
+                          Send Message
+                        </button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
-
-              
-
     <!--========================================================================
 			JavaScript Files
 		=========================================================================-->
