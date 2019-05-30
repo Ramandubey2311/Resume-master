@@ -203,7 +203,7 @@ $(function() {
 
   $(function() {
     $(".typed").typed({
-      strings: ["BizTalk Developer", "IT Consultant", "IT Operation Lead", "Human :)"],
+      strings: ["a Developer", "a Consultant", "IT Operation Lead", "pusuing EMBA", "Human :)"],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
       // typing speed
